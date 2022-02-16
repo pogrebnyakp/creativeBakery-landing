@@ -1,4 +1,4 @@
-#   Miami Condo Kings landing page
+#   Creative Bakery landing page
 # Links
   - [DEMO LINK](https://pogrebnyakp.github.io/creativeBakery-landing/)
   - [LAYOUT DESIGN](https://www.figma.com/file/dY3izAm0Vspsmra4lQWQIP/Bakerlab-(FE))
