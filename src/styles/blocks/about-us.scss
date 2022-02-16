@@ -1,0 +1,37 @@
+.about-us {
+  padding-top: 72px;
+  background-image: url(../images/Crumbs.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    padding-top: 152px;
+  }
+
+  @include onDesktop {
+    padding-top: 178px;
+  }
+
+  &__title {
+    @include MobileHeadingsH2;
+    color: $accentOrange;
+    margin-bottom: 32px;
+
+    @include onTablet {
+      @include TabletHeadingsH2;
+      color: $accentOrange;
+      margin-bottom: 0;
+    }
+
+    @include onDesktop {
+      @include DesktopHeadingsH2;
+      color: $accentOrange;
+    }
+
+  }
+
+  &__discription {
+    @include textDescription;
+    color: $black;
+  }
+}

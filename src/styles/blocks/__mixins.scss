@@ -1,0 +1,108 @@
+@mixin onTablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onDesktopXL {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin textDescription {
+  font-style: normal;
+  font-weight: 400;
+  color: $black;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+@mixin textUppercase {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+@mixin textBig {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+@mixin MobileHeadingsH1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+@mixin MobileHeadingsH2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+@mixin TabletHeadingsH1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+@mixin TabletHeadingsH2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+@mixin DesktopHeadingsH1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 112px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+@mixin DesktopHeadingsH2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 85%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+@mixin socialIcon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s;
+}

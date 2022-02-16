@@ -1,0 +1,16 @@
+.logo {
+  display: inline-block;
+
+  &__image {
+
+    &--white {
+      width: 168px;
+      height: 40px;
+      margin-bottom: 40px;
+
+      @include onTablet {
+        margin-bottom: 88px;
+      }
+    }
+  }
+}

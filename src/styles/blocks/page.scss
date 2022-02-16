@@ -1,0 +1,47 @@
+.page {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+
+  &__content {
+    margin: 0;
+  }
+
+  &__section {
+    background-color: $lightPink;
+
+    &-title {
+      padding-top: 104px;
+      margin-bottom: 24px;
+      @include MobileHeadingsH2;
+      color: $accentOrange;
+
+      @include onTablet {
+        padding-top: 228px;
+        @include TabletHeadingsH2;
+      }
+
+      @include onDesktop {
+        padding-top: 288px;
+        @include DesktopHeadingsH2;
+      }
+    }
+
+    &-discription {
+      margin-bottom: 40px;
+      @include textDescription;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(200%);
+    transition: transform 0.3s;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.header {
+  
+  &__content {
+    min-height: 100vh;
+  }
+
+  &__top {
+    margin-bottom: 32px;
+
+    @include onTablet {
+      margin: 0 -24px 80px;
+    }
+
+    @include onDesktop {
+      margin: 0 -8px 134px;
+    }
+
+    @include onDesktopXL {
+      margin: 0 -84px 142px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__description {
+    margin-bottom: 32px;
+    @include textDescription;
+    color: $black;
+    text-align: center;
+
+    @include onTablet {
+      margin-bottom: 146px;
+      text-align: left;
+    }
+
+    @include onDesktop {
+      margin-bottom: 8px;
+    }
+    @include onDesktopXL {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 288px;
+    @include MobileHeadingsH1;
+    text-align: center;
+    color: $accentOrange;
+
+    @include onTablet {
+      margin-bottom: 210px;
+      @include TabletHeadingsH1;
+    }
+
+    @include onDesktop {
+      margin-bottom: 64px;
+
+    }
+
+    @include onDesktopXL {
+      @include DesktopHeadingsH1;
+    }
+  }
+
+  &__button {
+    max-width: 326px;
+    margin: 0 auto;
+
+    @include onDesktop {
+      max-width: 260px;
+      margin: 0;
+    }
+  }
+}

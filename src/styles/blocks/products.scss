@@ -1,0 +1,75 @@
+
+.card {
+  display: block;
+  padding-top: 58px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include onTablet {
+    padding-top: 88px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    max-height: 356px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+
+    @include onTablet {
+      max-height: 424px;
+    }
+
+    @include onDesktop {
+      max-height: 512px;
+    }
+
+    @include onDesktopXL {
+      max-height: 560px;
+    }
+
+    &-container {
+      box-sizing: border-box;
+      width: 100%;
+      overflow: hidden;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__title {
+    @include textUppercase;
+    color: $grey;
+    margin-bottom: 8px;
+  }
+
+  &__discription {
+    @include textDescription;
+    color: $black;
+    margin-bottom: 24px;
+  }
+
+  &__link {
+
+    &::before {
+      background-image: url(../images/arrow_orange.svg);
+      background-position: center;
+    }
+
+    &:hover::before {
+      background-image: url(../images/arrow_orange.svg);
+    }
+
+    &:focus::before {
+      background-image: url(../images/arrow_dark_orange.svg);
+    }
+  }
+}
